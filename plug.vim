@@ -18,7 +18,6 @@ Plug 'leafgarland/typescript-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'joshdick/onedark.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -26,10 +25,12 @@ Plug 'airblade/vim-rooter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
-Plug 'preservim/nerdtree'
 Plug 'dyng/ctrlsf.vim'
 Plug 'unblevable/quick-scope'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'sheerun/vim-polyglot'
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
