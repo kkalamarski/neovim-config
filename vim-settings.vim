@@ -1,7 +1,7 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 let loaded_netrwPlugin = 1
-
+let mapleader = " "
 syntax on
 
 set laststatus=2
@@ -19,4 +19,3 @@ set mouse=a
 set clipboard=unnamedplus
 set tabstop=2 shiftwidth=2 expandtab
 
-let g:airline#extensions#tabline#enabled = 1

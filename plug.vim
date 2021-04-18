@@ -14,7 +14,6 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 call plug#begin('~/.vim/plugged')
 
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
-Plug 'leafgarland/typescript-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -31,6 +30,8 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'sheerun/vim-polyglot'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'ryanoasis/vim-devicons'
-
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'mhinz/vim-startify'
+Plug 'akinsho/nvim-bufferline.lua'
 call plug#end()
 
