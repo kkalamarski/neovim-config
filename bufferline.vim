@@ -12,5 +12,3 @@ nnoremap <silent>be :BufferLineSortByExtension<CR>
 nnoremap <silent>bd :BufferLineSortByDirectory<CR>
 nnoremap <silent><mymap> :lua require'bufferline'.sort_buffers_by(function (buf_a, buf_b) return buf_a.id < buf_b.id end)<CR>
 
-
-lua require('nv-bufferline')

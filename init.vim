@@ -5,8 +5,8 @@ source $HOME/.config/nvim/terminal.vim
 source $HOME/.config/nvim/bufferline.vim
 source $HOME/.config/nvim/windows.vim
 source $HOME/.config/nvim/colorscheme.vim
-source $HOME/.config/nvim/feline.vim
 source $HOME/.config/nvim/plug-config/quickscope.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/keys/which-key.vim
 
+luafile $HOME/.config/nvim/future-init.lua

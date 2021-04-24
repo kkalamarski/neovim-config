@@ -1,4 +1,3 @@
-nnoremap <C-n> :tabnew<CR>
 nnoremap <C-g> :GFiles<CR>
 nnoremap <C-f> :BLines<CR>
 

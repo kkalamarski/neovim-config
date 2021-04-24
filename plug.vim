@@ -21,7 +21,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'unblevable/quick-scope'
-Plug 'folke/tokyonight.nvim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mhinz/vim-startify'
@@ -30,20 +29,9 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hoob3rt/lualine.nvim'
+Plug 'tiagovla/tokyodark.nvim'
+Plug 'kyazdani42/nvim-tree.lua'
+Plug 'justinmk/vim-sneak'
 
 call plug#end()
 
-lua require('gitsigns').setup()
-lua <<EOF
-
-require('lualine').setup({
-  options = { theme = "tokyonight"}
-})
-
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
-  highlight = {
-    enable = true,              -- false will disable the whole extension
-  },
-}
-EOF
