@@ -13,3 +13,4 @@ require('plugins.lualine')
 
 -- lsp
 require('plugins.tree-sitter')
+require('plugins.compe')
