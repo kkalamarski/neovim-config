@@ -1,6 +1,8 @@
+-- map the leader key
+vim.g.mapleader = ' '
+
+require('keymappings')
 require('plugins')
-
-
--- Plugins TODO: move to separate files
-
+require('settings')
+require('colorscheme')
 

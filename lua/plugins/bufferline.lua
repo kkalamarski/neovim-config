@@ -29,3 +29,6 @@ require'bufferline'.setup{
     end,
   }
 }
+
+vim.api.nvim_set_keymap('n', '<Leader><Right>', ':BufferLineCycleNext<CR>', {})
+vim.api.nvim_set_keymap('n', '<Leader><Left>', ':BufferLineCyclePrev<CR>', {})

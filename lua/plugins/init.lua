@@ -3,6 +3,7 @@ require('plugins.bufferline')
 
 -- navigation
 require('plugins.nvim-tree')
+require('plugins.quick-scope')
 
 -- git
 require('plugins.gitsigns')
