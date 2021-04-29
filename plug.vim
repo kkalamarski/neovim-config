@@ -30,12 +30,18 @@ Plug 'akinsho/nvim-bufferline.lua'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'hoob3rt/lualine.nvim'
+Plug 'famiu/feline.nvim'
 Plug 'tiagovla/tokyodark.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'justinmk/vim-sneak'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
+Plug 'akinsho/nvim-toggleterm.lua'
+Plug 'folke/lsp-trouble.nvim'
+Plug 'windwp/nvim-autopairs'
+Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
+Plug 'dense-analysis/ale'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 

@@ -19,14 +19,7 @@ require'bufferline'.setup{
     separator_style = "thick",
     enforce_regular_tabs = true,
     always_show_bufferline = true,
-    sort_by = 'extension',
-    custom_filter = function(buf_number)
-      -- filter out terminal buffers
-      if string.match(vim.fn.bufname(buf_number), "/bin/zsh") then
-        return false
-      end
-      return true
-    end,
+    sort_by = 'extension'
   }
 }
 

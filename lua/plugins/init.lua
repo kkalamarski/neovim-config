@@ -9,8 +9,14 @@ require('plugins.quick-scope')
 require('plugins.gitsigns')
 
 -- statusline
-require('plugins.lualine')
+require('plugins.feline')
 
 -- lsp
 require('plugins.tree-sitter')
+require('plugins.lsp-trouble')
 require('plugins.compe')
+require('plugins.nvim-autopairs')
+require('plugins.ale')
+
+-- terminal
+require('plugins.toggleterm')
