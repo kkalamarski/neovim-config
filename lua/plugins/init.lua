@@ -1,5 +1,6 @@
 -- tabs
 require('plugins.bufferline')
+require('plugins.vim-bbye')
 
 -- navigation
 require('plugins.nvim-tree')

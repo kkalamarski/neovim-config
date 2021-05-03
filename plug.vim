@@ -42,6 +42,8 @@ Plug 'windwp/nvim-autopairs'
 Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'moll/vim-bbye'
 
 call plug#end()
 

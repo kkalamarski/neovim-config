@@ -6,22 +6,23 @@ require'lspconfig'.tsserver.setup{
         ts_utils.setup {
             disable_commands = false,
             debug = false,
-            enable_import_on_completion = false,
+            enable_import_on_completion = true,
             import_on_completion_timeout = 5000,
             -- eslint
             eslint_bin = "eslint",
             eslint_args = {"-f", "json", "--stdin", "--stdin-filename", "$FILENAME"},
             eslint_enable_disable_comments = true,
 
-	    -- experimental settings!
+            -- experimental settings!
+            --
             -- eslint diagnostics
             eslint_enable_diagnostics = false,
             eslint_diagnostics_debounce = 250,
             -- formatting
-            enable_formatting = false,
+            enable_formatting = true,
             formatter = "prettier",
             formatter_args = {"--stdin-filepath", "$FILENAME"},
-            format_on_save = false,
+            format_on_save = true,
             no_save_after_format = false,
             -- parentheses completion
             complete_parens = false,
