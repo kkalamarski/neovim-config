@@ -15,7 +15,7 @@ require'compe'.setup {
   documentation = true;
 
   source = {
-    path = true;
+    path = false;
     buffer = true;
     calc = false;
     vsnip = false;

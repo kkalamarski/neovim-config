@@ -36,7 +36,6 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'justinmk/vim-sneak'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
-Plug 'akinsho/nvim-toggleterm.lua'
 Plug 'folke/lsp-trouble.nvim'
 Plug 'windwp/nvim-autopairs'
 Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
@@ -44,6 +43,7 @@ Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'moll/vim-bbye'
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
 

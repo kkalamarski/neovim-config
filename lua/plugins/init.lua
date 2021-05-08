@@ -20,4 +20,4 @@ require('plugins.nvim-autopairs')
 require('plugins.ale')
 
 -- terminal
-require('plugins.toggleterm')
+require('plugins.floaterm-vim')

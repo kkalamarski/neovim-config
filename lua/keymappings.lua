@@ -14,11 +14,6 @@ map('n', '<Leader>rg', ':Rg<CR>', options)
 
 -- Terminal
 map('t', 'jj', '<C-\\><C-n>', options) -- exit terminal insert mode
-map('t', '<Esc>', '<C-\\><C-n>', options) -- exit terminal insert mode
-map('t', '<Leader>t1', ':1ToggleTerm<CR>', options) 
-map('n', '<Leader>t1', ':1ToggleTerm<CR>', options) 
-map('t', '<Leader>t2', ':2ToggleTerm<CR>', options) 
-map('n', '<Leader>t2', ':2ToggleTerm<CR>', options) 
 
 -- LSP
 map("n", "<Leader>xx", ":LspTroubleToggle<CR>", options)
