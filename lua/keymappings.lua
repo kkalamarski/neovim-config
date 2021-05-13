@@ -1,3 +1,4 @@
+-- Moving lines
 local map = vim.api.nvim_set_keymap
 local options = { noremap = true, silent = true }
 
@@ -20,4 +21,8 @@ map("n", "<Leader>xx", ":LspTroubleToggle<CR>", options)
 map("n", "<Leader>gd", ":lua vim.lsp.buf.definition()<CR>", options)
 map("n", "<Leader>k", ":lua vim.lsp.buf.hover()<CR>", options)
 map("n", "<Leader>a", ":lua vim.lsp.buf.code_action()<CR>", options)
- 
+
+-- Moving lines
+map("n", "<S-Up>", ":m -2<CR>", options)
+map("n", "<S-Down>", ":m +1<CR>", options)
+
