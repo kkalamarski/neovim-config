@@ -32,6 +32,7 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'famiu/feline.nvim'
 Plug 'tiagovla/tokyodark.nvim'
+Plug 'folke/tokyonight.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'justinmk/vim-sneak'
 Plug 'neovim/nvim-lspconfig'
