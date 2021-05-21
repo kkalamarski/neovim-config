@@ -18,6 +18,8 @@ require('plugins.lsp-trouble')
 require('plugins.compe')
 require('plugins.nvim-autopairs')
 require('plugins.ale')
+require('plugins.lspsaga')
+require('plugins.nvim-ts-autotag')
 
 -- terminal
 require('plugins.floaterm-vim')

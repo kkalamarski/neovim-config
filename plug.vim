@@ -31,7 +31,6 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'famiu/feline.nvim'
-Plug 'tiagovla/tokyodark.nvim'
 Plug 'folke/tokyonight.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'justinmk/vim-sneak'
@@ -45,6 +44,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'moll/vim-bbye'
 Plug 'voldikss/vim-floaterm'
+Plug 'glepnir/lspsaga.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'windwp/nvim-ts-autotag'
 
 call plug#end()
 
