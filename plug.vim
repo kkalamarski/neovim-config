@@ -45,7 +45,8 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'moll/vim-bbye'
 Plug 'voldikss/vim-floaterm'
 Plug 'glepnir/lspsaga.nvim'
-Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'Yggdroot/indentLine'
+Plug 'lukas-reineke/indent-blankline.nvim', { 'branch': 'lua' }
 Plug 'windwp/nvim-ts-autotag'
 
 call plug#end()

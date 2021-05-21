@@ -22,4 +22,5 @@ vim.bo.autoindent = true
 vim.wo.relativenumber = true
 vim.wo.cursorline = true
 vim.wo.wrap = false
-                  
+
+vim.g.indentLine_char = '▏'
