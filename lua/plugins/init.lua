@@ -1,25 +1,24 @@
--- tabs
+--tabs
 require('plugins.bufferline')
 require('plugins.vim-bbye')
 
--- navigation
+--navigation
 require('plugins.nvim-tree')
 require('plugins.quick-scope')
 
--- git
+--git
 require('plugins.gitsigns')
 
--- statusline
+--statusline
 require('plugins.feline')
 
--- lsp
+--lsp
 require('plugins.tree-sitter')
 require('plugins.lsp-trouble')
 require('plugins.compe')
 require('plugins.nvim-autopairs')
-require('plugins.ale')
 require('plugins.lspsaga')
 require('plugins.nvim-ts-autotag')
 
--- terminal
+--terminal
 require('plugins.floaterm-vim')

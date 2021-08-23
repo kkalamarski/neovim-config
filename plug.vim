@@ -16,38 +16,36 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'prettier/vim-prettier', { 'do': 'npm install' }
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'moll/vim-bbye'
 Plug 'junegunn/fzf.vim'
+Plug 'famiu/feline.nvim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-startify'
+Plug 'hrsh7th/nvim-compe'
+Plug 'justinmk/vim-sneak'
+Plug 'glepnir/lspsaga.nvim'
 Plug 'tpope/vim-commentary'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'folke/tokyonight.nvim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'windwp/nvim-autopairs'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'voldikss/vim-floaterm'
 Plug 'unblevable/quick-scope'
 Plug 'ryanoasis/vim-devicons'
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'mhinz/vim-startify'
-Plug 'akinsho/nvim-bufferline.lua'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'lewis6991/gitsigns.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'famiu/feline.nvim'
-Plug 'folke/tokyonight.nvim'
-Plug 'kyazdani42/nvim-tree.lua'
-Plug 'justinmk/vim-sneak'
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-compe'
 Plug 'folke/lsp-trouble.nvim'
-Plug 'windwp/nvim-autopairs'
-Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
-Plug 'dense-analysis/ale'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'moll/vim-bbye'
-Plug 'voldikss/vim-floaterm'
-Plug 'glepnir/lspsaga.nvim'
-Plug 'Yggdroot/indentLine'
-Plug 'lukas-reineke/indent-blankline.nvim', { 'branch': 'lua' }
 Plug 'windwp/nvim-ts-autotag'
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'kyazdani42/nvim-tree.lua'
+Plug 'akinsho/nvim-bufferline.lua'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
 
