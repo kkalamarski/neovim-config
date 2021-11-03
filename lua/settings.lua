@@ -10,6 +10,7 @@ vim.o.clipboard = 'unnamedplus'
 vim.o.fcs = 'eob: '
 vim.o.tabstop = 2
 vim.o.expandtab = true
+vim.o.termguicolors = true
 
 -- Buffer options
 vim.bo.shiftwidth = 2
@@ -19,8 +20,9 @@ vim.bo.softtabstop = 2
 vim.bo.autoindent = true
 
 -- Window options
+vim.wo.number = true
 vim.wo.relativenumber = true
 vim.wo.cursorline = true
 vim.wo.wrap = false
 
-vim.g.indentLine_char = '▏'
+vim.opt.termguicolors = true
