@@ -6,11 +6,13 @@ map('n', '<A-Up>', ':wincmd k<CR>', options)
 map('n', '<A-Down>', ':wincmd j<CR>', options)
 map('n', '<A-Left>', ':wincmd h<CR>', options)
 map('n', '<A-Right>', ':wincmd l<CR>', options)
+map('n', '<Leader>vs', ':vsplit<CR>', options)
+map('n', '<Leader>hs', ':split<CR>', options)
 
 -- Buffer control
 map('n', '<Leader>q', ':Bdelete<CR>', options) -- close buffer
-map('n', '<Leader><Right>', ':BufferLineCycleNext<CR>', options) -- next buffer
-map('n', '<Leader><Left>', ':BufferLineCyclePrev<CR>', options) -- previous buffer
+map('n', '<Leader><Right>', ':bnext<CR>', options) -- next buffer
+map('n', '<Leader><Left>', ':bprevious<CR>', options) -- previous buffer
 
 -- Dashboard
 map('n', '<Leader>dd', ':Dashboard<CR>', options)
@@ -69,3 +71,6 @@ map("n", "<Leader>td", ":FloatermKill <CR>", options) -- kill terminal
 -- LazyGit
 local lazygit_cmd = ":FloatermNew --height=0.9 --width=0.9 --wintype=float --name=lazygit --autoclose=2 lazygit <CR>"
 map("n", "<leader>gg", lazygit_cmd, options)
+
+map("n", "<leader>gb", ":G blame <CR>", options)
+

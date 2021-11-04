@@ -1,53 +1,52 @@
-local fn = vim.fn
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-if fn.empty(fn.glob(install_path)) > 0 then
-  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-end
+vim.cmd [[packadd packer.nvim]]
 
 require('packer').startup(function() 
-  use { 'glepnir/dashboard-nvim', config = require('plugins.dashboard-nvim') }
+  use 'wbthomason/packer.nvim'
 
-  -- Tabs
-  use { 'moll/vim-bbye', config = require('plugins.vim-bbye') } 
-  use { 'akinsho/nvim-bufferline.lua', config = require('plugins.nvim-bufferline') } 
+  -- Dashboard
+  use { 'glepnir/dashboard-nvim', config = function() require('plugins.dashboard-nvim') end }
+
+  -- Buffers & Statusline
+  use 'famiu/feline.nvim'
+  use { 'moll/vim-bbye', config = function() require('plugins.vim-bbye') end } 
+  use { 'noib3/cokeline.nvim', requires = { 'kyazdani42/nvim-web-devicons' }, config = function() require('plugins.cokeline-nvim') end }
 
   -- Navigation
   use 'justinmk/vim-sneak'
-  use { 'kyazdani42/nvim-tree.lua', config = require('plugins.nvim-tree') }
-  use { 'unblevable/quick-scope', config = require('plugins.quick-scope') }
+  use { 'kyazdani42/nvim-tree.lua', config = function() require('plugins.nvim-tree') end }
+  use { 'unblevable/quick-scope', config = function() require('plugins.quick-scope') end }
 
-  
-
-  use 'kyazdani42/nvim-web-devicons'  
-  use 'junegunn/fzf.vim'
-  use 'famiu/feline.nvim'
-  use 'tpope/vim-surround'
+  -- Git
   use 'tpope/vim-fugitive'
-  -- use 'mhinz/vim-startify'
+  use 'lewis6991/gitsigns.nvim'
+
+  -- LSP
+  use 'github/copilot.vim'
   use 'hrsh7th/nvim-compe'
   use 'glepnir/lspsaga.nvim'
-  use 'tpope/vim-commentary'
-  use 'nvim-lua/plenary.nvim'
-  use 'folke/tokyonight.nvim'
   use 'neovim/nvim-lspconfig'
+  use 'windwp/nvim-ts-autotag'
+  use 'pantharshit00/vim-prisma'
+  use 'jose-elias-alvarez/null-ls.nvim' 
+  use 'jose-elias-alvarez/nvim-lsp-ts-utils' 
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+
+  -- Utils
+  use 'tpope/vim-surround'
+  use 'tpope/vim-commentary'
   use 'windwp/nvim-autopairs'
   use 'nvim-lua/plenary.nvim'
   use 'voldikss/vim-floaterm'
   use 'ryanoasis/vim-devicons'
-  use 'windwp/nvim-ts-autotag'
-  use 'lewis6991/gitsigns.nvim'
-  use 'pantharshit00/vim-prisma'
   use 'editorconfig/editorconfig-vim' 
-  use 'jose-elias-alvarez/null-ls.nvim' 
-  use 'jose-elias-alvarez/nvim-lsp-ts-utils' 
-  
-  use { 'junegunn/fzf',  run = 'fzf#install()' }
   use { 'prettier/vim-prettier', run = 'npm install' }
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
-  if packer_bootstrap then
-    require('packer').sync()
-  end
+  -- Visuals
+  use 'folke/tokyonight.nvim'
+ 
+  -- Fuzzy Finder
+  use 'junegunn/fzf'
+  use 'junegunn/fzf.vim'
 end) 
 
 require('plugins.settings')

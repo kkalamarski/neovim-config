@@ -26,3 +26,4 @@ vim.wo.cursorline = true
 vim.wo.wrap = false
 
 vim.opt.termguicolors = true
+
