@@ -41,8 +41,11 @@ require('packer').startup(function()
   use 'editorconfig/editorconfig-vim' 
   use { 'prettier/vim-prettier', run = 'npm install' }
 
-  -- Visuals
+  -- Themes
+  use 'shaunsingh/nord.nvim'
   use 'folke/tokyonight.nvim'
+  use 'olimorris/onedarkpro.nvim'
+  use { 'catppuccin/nvim', as = 'catppuccin' }
  
   -- Fuzzy Finder
   use 'junegunn/fzf'

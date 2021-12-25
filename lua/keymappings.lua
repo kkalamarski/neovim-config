@@ -17,8 +17,9 @@ map('n', '<Leader><Left>', ':bprevious<CR>', options) -- previous buffer
 -- Dashboard
 map('n', '<Leader>dd', ':Dashboard<CR>', options)
 map('n', '<Leader>ct', ':DashboardChangeColorscheme<CR>', options)
-map('n', '<Leader>ff', ':DashboardFindFile<CR>', options)
-map('n', '<Leader>fa', ':DashboardFindWord<CR>', options)
+map('n', '<Leader>ff', ':GitFiles<CR>', options)
+map('n', '<Leader>fa', ':DashboardFindFile<CR>', options)
+map('n', '<Leader>fw', ':DashboardFindWord<CR>', options)
 map('n', '<Leader>fh', ':DashboardFindHistory<CR>', options)
 map('n', '<Leader>fb', ':DashboardJumpMark<CR>', options)
 map('n', '<Leader>cn', ':DashboardNewFile<CR>', options)
@@ -73,4 +74,7 @@ local lazygit_cmd = ":FloatermNew --height=0.9 --width=0.9 --wintype=float --nam
 map("n", "<leader>gg", lazygit_cmd, options)
 
 map("n", "<leader>gb", ":G blame <CR>", options)
+
+-- Utils
+map("n", "<Leader>]]", ":source %<CR>", {}) -- source current file
 
