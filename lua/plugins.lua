@@ -9,7 +9,7 @@ require('packer').startup(function()
   -- Buffers & Statusline
   use 'famiu/feline.nvim'
   use { 'moll/vim-bbye', config = function() require('plugins.vim-bbye') end } 
-  use { 'noib3/cokeline.nvim', requires = { 'kyazdani42/nvim-web-devicons' }, config = function() require('plugins.cokeline-nvim') end }
+  use { 'noib3/nvim-cokeline', requires = { 'kyazdani42/nvim-web-devicons' }, config = function() require('plugins.cokeline-nvim') end }
 
   -- Navigation
   use 'justinmk/vim-sneak'

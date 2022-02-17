@@ -39,7 +39,7 @@ map("n", "<S-Down>", ":m +1<CR>", options)
 
 -- LspSaga
 map('n', '<Leader>gh', ':Lspsaga lsp_finder<CR>', options)
-map('n', '<Leader>ca', ':Lspsaga code_action<CR>', options)
+map('n', '<Leader>ca', "<cmd>lua require('lspsaga.codeaction').code_action()<CR>", options)
 map('v', '<Leader>ca', ':<C-U>Lspsaga range_code_action<CR>', options)
 map('n', 'K', ':Lspsaga hover_doc<CR>', options)
 map('n', '<Leader>gs', ':Lspsaga signature_help<CR>', options)

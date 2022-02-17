@@ -1,7 +1,7 @@
 local nvim_lsp = require("lspconfig")
 
 -- enable null-ls integration (optional)
-require("null-ls").config {}
+require("null-ls").setup {}
 require("lspconfig")["null-ls"].setup {}
 
 -- make sure to only run this once!

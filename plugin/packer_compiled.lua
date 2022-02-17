@@ -74,12 +74,6 @@ _G.packer_plugins = {
     path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
   },
-  ["cokeline.nvim"] = {
-    config = { "\27LJ\2\n5\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\26plugins.cokeline-nvim\frequire\0" },
-    loaded = true,
-    path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/cokeline.nvim",
-    url = "https://github.com/noib3/cokeline.nvim"
-  },
   ["copilot.vim"] = {
     loaded = true,
     path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/copilot.vim",
@@ -135,6 +129,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
+  },
+  ["nvim-cokeline"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\26plugins.cokeline-nvim\frequire\0" },
+    loaded = true,
+    path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/nvim-cokeline",
+    url = "https://github.com/noib3/nvim-cokeline"
   },
   ["nvim-compe"] = {
     loaded = true,
@@ -251,10 +251,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for dashboard-nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\27plugins.dashboard-nvim\frequire\0", "config", "dashboard-nvim")
 time([[Config for dashboard-nvim]], false)
--- Config for: cokeline.nvim
-time([[Config for cokeline.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\26plugins.cokeline-nvim\frequire\0", "config", "cokeline.nvim")
-time([[Config for cokeline.nvim]], false)
+-- Config for: nvim-cokeline
+time([[Config for nvim-cokeline]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\26plugins.cokeline-nvim\frequire\0", "config", "nvim-cokeline")
+time([[Config for nvim-cokeline]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22plugins.nvim-tree\frequire\0", "config", "nvim-tree.lua")
@@ -272,5 +272,6 @@ if should_profile then save_profiles() end
 end)
 
 if not no_errors then
+  error_msg = error_msg:gsub('"', '\\"')
   vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end
