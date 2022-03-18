@@ -74,6 +74,16 @@ _G.packer_plugins = {
     path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
   },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
+  },
   ["copilot.vim"] = {
     loaded = true,
     path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/copilot.vim",
@@ -115,6 +125,11 @@ _G.packer_plugins = {
     path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
+  },
   ["nord.nvim"] = {
     loaded = true,
     path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/nord.nvim",
@@ -130,6 +145,11 @@ _G.packer_plugins = {
     path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
   },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
   ["nvim-cokeline"] = {
     config = { "\27LJ\2\n5\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\26plugins.cokeline-nvim\frequire\0" },
     loaded = true,
@@ -141,6 +161,11 @@ _G.packer_plugins = {
     path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/nvim-compe",
     url = "https://github.com/hrsh7th/nvim-compe"
   },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
   ["nvim-lsp-ts-utils"] = {
     loaded = true,
     path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/nvim-lsp-ts-utils",
@@ -150,6 +175,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-metals"] = {
+    loaded = true,
+    path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/nvim-metals",
+    url = "https://github.com/scalameta/nvim-metals"
   },
   ["nvim-tree.lua"] = {
     config = { "\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22plugins.nvim-tree\frequire\0" },
@@ -243,14 +273,20 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
+  },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "/Users/kkalamarski/.local/share/nvim/site/pack/packer/start/vscode.nvim",
+    url = "https://github.com/Mofiqul/vscode.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: dashboard-nvim
-time([[Config for dashboard-nvim]], true)
-try_loadstring("\27LJ\2\n6\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\27plugins.dashboard-nvim\frequire\0", "config", "dashboard-nvim")
-time([[Config for dashboard-nvim]], false)
 -- Config for: nvim-cokeline
 time([[Config for nvim-cokeline]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\26plugins.cokeline-nvim\frequire\0", "config", "nvim-cokeline")
@@ -267,6 +303,10 @@ time([[Config for vim-bbye]], false)
 time([[Config for quick-scope]], true)
 try_loadstring("\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24plugins.quick-scope\frequire\0", "config", "quick-scope")
 time([[Config for quick-scope]], false)
+-- Config for: dashboard-nvim
+time([[Config for dashboard-nvim]], true)
+try_loadstring("\27LJ\2\n6\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\27plugins.dashboard-nvim\frequire\0", "config", "dashboard-nvim")
+time([[Config for dashboard-nvim]], false)
 if should_profile then save_profiles() end
 
 end)

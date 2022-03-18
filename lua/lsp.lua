@@ -1,16 +1,18 @@
 local nvim_lsp = require("lspconfig")
+local opts = { silent = true }
 
--- enable null-ls integration (optional)
-require("null-ls").setup {}
-require("lspconfig")["null-ls"].setup {}
+-- Elm LSP
+require'lspconfig'.elmls.setup{
+  on_attach = function(client, bufnr)
+    -- enable elm-format on save
+    vim.api.nvim_buf_set_option(bufnr, 'modified', false)
+    vim.api.nvim_buf_set_keymap(bufnr, "n", "fmt", ":!elm-format % --yes<CR>:w<CR>", opts)
+  end
+}
 
--- make sure to only run this once!
+-- Typescript LSP
 nvim_lsp.tsserver.setup {
     on_attach = function(client, bufnr)
-        -- disable tsserver formatting if you plan on formatting via null-ls
-        client.resolved_capabilities.document_formatting = false
-        client.resolved_capabilities.document_range_formatting = false
-
         local ts_utils = require("nvim-lsp-ts-utils")
 
         -- defaults
@@ -57,15 +59,10 @@ nvim_lsp.tsserver.setup {
         ts_utils.setup_client(client)
 
         -- no default maps, so you may want to define some here
-        local opts = { silent = true }
         vim.api.nvim_buf_set_keymap(bufnr, "n", "gs", ":TSLspOrganize<CR>", opts)
         vim.api.nvim_buf_set_keymap(bufnr, "n", "qq", ":TSLspFixCurrent<CR>", opts)
         vim.api.nvim_buf_set_keymap(bufnr, "n", "gr", ":TSLspRenameFile<CR>", opts)
         vim.api.nvim_buf_set_keymap(bufnr, "n", "gi", ":TSLspImportAll<CR>", opts)
-
-
-        -- disable tsserver formatting
-        client.resolved_capabilities.document_formatting = false
 
         -- define an alias
         vim.cmd("command -buffer Formatting lua vim.lsp.buf.formatting()")
@@ -73,5 +70,14 @@ nvim_lsp.tsserver.setup {
 
         -- format on save
         vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
+
+        if client.resolved_capabilities.document_formatting then
+            vim.cmd([[
+            augroup LspFormatting
+                autocmd! * <buffer>
+                autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()
+            augroup END
+            ]])
+        end
     end
 }

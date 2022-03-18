@@ -31,6 +31,16 @@ require('packer').startup(function()
   use 'jose-elias-alvarez/nvim-lsp-ts-utils' 
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
+  -- Scala
+  use { 'scalameta/nvim-metals', requires = { 
+    "nvim-lua/plenary.nvim", "mfussenegger/nvim-dap",
+  }} 
+  use { "hrsh7th/nvim-cmp", requires = {
+    "hrsh7th/cmp-nvim-lsp", "hrsh7th/cmp-vsnip", "hrsh7th/vim-vsnip"
+  }}
+  require('plugins.nvim-metals')
+
+
   -- Utils
   use 'tpope/vim-surround'
   use 'tpope/vim-commentary'
@@ -42,10 +52,8 @@ require('packer').startup(function()
   use { 'prettier/vim-prettier', run = 'npm install' }
 
   -- Themes
-  use 'shaunsingh/nord.nvim'
+  use 'Mofiqul/vscode.nvim'
   use 'folke/tokyonight.nvim'
-  use 'olimorris/onedarkpro.nvim'
-  use { 'catppuccin/nvim', as = 'catppuccin' }
  
   -- Fuzzy Finder
   use 'junegunn/fzf'
