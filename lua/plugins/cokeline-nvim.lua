@@ -50,7 +50,7 @@ local components = {
 
   index = {
     text = function(buffer)
-      return buffer.index .. ': '
+      return buffer.index .. ': ' 
     end,
     truncation = { priority = 1 }
   },
@@ -126,12 +126,21 @@ require('cokeline').setup({
     components.close_or_unsaved,
     components.space,
   },
+  default_hl = {
+    fg = function(buffer) 
+      return buffer.is_focused and get_hex('Statement', 'fg') or get_hex('Comment', 'fg')
+    end,
+    bg = "NONE",
+    style = function(buffer)
+      return buffer.is_focused and "bold" or nil
+    end,
+  },
   sidebar = {
     filetype = 'NvimTree',
     components = {
       components.two_spaces,
       {
-        text = "NvimTree"
+        text = "🚀 NvimTree"
       }
     }
   }

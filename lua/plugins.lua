@@ -7,7 +7,7 @@ require('packer').startup(function()
   use { 'glepnir/dashboard-nvim', config = function() require('plugins.dashboard-nvim') end }
 
   -- Buffers & Statusline
-  use 'famiu/feline.nvim'
+  use 'nvim-lualine/lualine.nvim'
   use { 'moll/vim-bbye', config = function() require('plugins.vim-bbye') end } 
   use { 'noib3/nvim-cokeline', requires = { 'kyazdani42/nvim-web-devicons' }, config = function() require('plugins.cokeline-nvim') end }
 
@@ -31,16 +31,6 @@ require('packer').startup(function()
   use 'jose-elias-alvarez/nvim-lsp-ts-utils' 
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
-  -- Scala
-  use { 'scalameta/nvim-metals', requires = { 
-    "nvim-lua/plenary.nvim", "mfussenegger/nvim-dap",
-  }} 
-  use { "hrsh7th/nvim-cmp", requires = {
-    "hrsh7th/cmp-nvim-lsp", "hrsh7th/cmp-vsnip", "hrsh7th/vim-vsnip"
-  }}
-  require('plugins.nvim-metals')
-
-
   -- Utils
   use 'tpope/vim-surround'
   use 'tpope/vim-commentary'
@@ -53,7 +43,9 @@ require('packer').startup(function()
 
   -- Themes
   use 'Mofiqul/vscode.nvim'
+  use 'shaunsingh/nord.nvim'
   use 'folke/tokyonight.nvim'
+  use "projekt0n/github-nvim-theme"
  
   -- Fuzzy Finder
   use 'junegunn/fzf'

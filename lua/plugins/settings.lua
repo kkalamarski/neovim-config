@@ -2,8 +2,8 @@
 --git
 require('plugins.gitsigns')
 
---statusline
-require('plugins.feline')
+--status line
+require('plugins.lualine')
 
 --lsp
 require('plugins.tree-sitter')
