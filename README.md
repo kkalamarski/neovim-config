@@ -3,6 +3,9 @@
 Complete nvim configuration that I use in my everyday work.
 
 ## Plugins
+
+For complete list inspect packer's [plugin file](https://github.com/kkalamarski/neovim-config/blob/main/lua/plugins.lua).
+
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 
 
