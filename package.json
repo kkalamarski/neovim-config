@@ -1,0 +1,21 @@
+{
+  "name": "nvim",
+  "version": "1.0.0",
+  "description": "Complete nvim configuration that I use in my everyday work.",
+  "main": "index.js",
+  "bin": "./bin/install.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkalamarski/vim-config.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkalamarski/vim-config/issues"
+  },
+  "homepage": "https://github.com/kkalamarski/vim-config#readme"
+}
