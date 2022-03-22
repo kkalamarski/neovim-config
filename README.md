@@ -2,6 +2,10 @@
 
 Complete nvim configuration that I use in my everyday work.
 
+## Plugins
+- [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
+
+
 ## Screenshots
 ![Zrzut ekranu 2022-03-22 o 21 56 55](https://user-images.githubusercontent.com/5514826/159574505-88888196-e077-4984-927b-ae904c6e6d7b.png)
 ![Zrzut ekranu 2022-03-22 o 21 57 25](https://user-images.githubusercontent.com/5514826/159574589-1e72a3f3-529e-4a5d-b797-0aef09d5d795.png)
