@@ -6,7 +6,8 @@ Complete nvim configuration that I use in my everyday work.
 
 For complete list inspect packer's [plugin file](https://github.com/kkalamarski/neovim-config/blob/main/lua/plugins.lua).
 
-- [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
+- [kyazdani42/nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
+- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
 
 ## Screenshots
