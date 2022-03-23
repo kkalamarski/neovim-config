@@ -1,13 +1,21 @@
 # kkalamarski's neovim config
 
-Complete nvim configuration that I use in my everyday work.
+An opinionated nvim configuration that I use in my everyday work. Best suited for web development.
 
 ## Plugins
 
 For complete list inspect packer's [plugin file](https://github.com/kkalamarski/neovim-config/blob/main/lua/plugins.lua).
 
+- [wbthomason/packer.nvim](https://github.com/nvim)
 - [kyazdani42/nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [noib3/nvim-cokeline](https://github.com/noib3/nvim-cokeline)
+- [github/copilot.vim](https://github.com/github/copilot.vim)
+- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [unblevable/quick-scope](https://github.com/unblevable/quick-scope)
+- [justinmk/vim-sneak](https://github.com/justinmk/vim-sneak)
+- [tpope/vim-surround](https://github.com/tpope/vim-surround)
+- [glepnir/dashboard-nvim](https://github.com/glepnir/dashboard-nvim)
 
 
 ## Screenshots
