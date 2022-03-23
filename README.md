@@ -17,6 +17,14 @@ For complete list inspect packer's [plugin file](https://github.com/kkalamarski/
 - [tpope/vim-surround](https://github.com/tpope/vim-surround)
 - [glepnir/dashboard-nvim](https://github.com/glepnir/dashboard-nvim)
 
+## Key bindings
+
+| key mapping  | description                                                     |
+|--------------|-----------------------------------------------------------------|
+| `<leader>ff` | Opens a floating window with fuzzy finder. Finds a file in git. |
+| `<leader>gg` | Opens a floating window with lazygit.                           |
+| `<leader>fh` | Opens a floating window with recently opened files.             |
+
 
 ## Screenshots
 ![Zrzut ekranu 2022-03-22 o 21 56 55](https://user-images.githubusercontent.com/5514826/159574505-88888196-e077-4984-927b-ae904c6e6d7b.png)
