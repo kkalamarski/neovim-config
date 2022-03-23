@@ -19,11 +19,18 @@ For complete list inspect packer's [plugin file](https://github.com/kkalamarski/
 
 ## Key bindings
 
-| key mapping  | description                                                     |
-|--------------|-----------------------------------------------------------------|
-| `<leader>ff` | Opens a floating window with fuzzy finder. Finds a file in git. |
-| `<leader>gg` | Opens a floating window with lazygit.                           |
-| `<leader>fh` | Opens a floating window with recently opened files.             |
+By default `<leader>` is mapped to ` ` (space).
+
+For a complete list see [lua/keymappings.lua](https://github.com/kkalamarski/neovim-config/blob/main/lua/keymappings.lua) file.
+
+| key mapping   | description                                                     |
+|---------------|-----------------------------------------------------------------|
+| `<leader>ff`  | Opens a floating window with fuzzy finder. Finds a file in git. |
+| `<leader>tt`  | Opens a floating window with terminal emulator.                 |
+| `<leader>gg`  | Opens a floating window with lazygit.                           |
+| `<leader>fh`  | Opens a floating window with recently opened files.             |
+| `<C-n>`       | Toggle NvimTree                                                 |
+| `<A-(arrows)>`| Move between the panes                                          |
 
 
 ## Screenshots
