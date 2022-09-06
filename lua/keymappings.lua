@@ -2,17 +2,17 @@ local map = vim.api.nvim_set_keymap
 local options = { noremap = true, silent = true }
 
 -- Moving between panes
-map('n', '<A-Up>', ':wincmd k<CR>', options)
-map('n', '<A-Down>', ':wincmd j<CR>', options)
-map('n', '<A-Left>', ':wincmd h<CR>', options)
-map('n', '<A-Right>', ':wincmd l<CR>', options)
+map('n', '<Leader><Up>', ':wincmd k<CR>', options)
+map('n', '<Leader><Down>', ':wincmd j<CR>', options)
+map('n', '<Leader><Left>', ':wincmd h<CR>', options)
+map('n', '<Leader><Right>', ':wincmd l<CR>', options)
 map('n', '<Leader>vs', ':vsplit<CR>', options)
 map('n', '<Leader>hs', ':split<CR>', options)
 
 -- Buffer control
 map('n', '<Leader>q', ':Bdelete<CR>', options) -- close buffer
-map('n', '<Leader><Right>', ':bnext<CR>', options) -- next buffer
-map('n', '<Leader><Left>', ':bprevious<CR>', options) -- previous buffer
+map('n', '<Leader>]]', ':bnext<CR>', options) -- next buffer
+map('n', '<Leader>[[', ':bprevious<CR>', options) -- previous buffer
 
 -- Dashboard
 map('n', '<Leader>dd', ':Dashboard<CR>', options)
@@ -76,5 +76,5 @@ map("n", "<leader>gg", lazygit_cmd, options)
 map("n", "<leader>gb", ":G blame <CR>", options)
 
 -- Utils
-map("n", "<Leader>]]", ":source %<CR>", {}) -- source current file
+map("n", "<Leader>ss", ":source %<CR>", {}) -- source current file
 
