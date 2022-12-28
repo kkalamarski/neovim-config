@@ -20,3 +20,10 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
 
+-- Moving between panes
+vim.keymap.set('n', '<leader><Up>', ':wincmd k<CR>')
+vim.keymap.set('n', '<leader><Down>', ':wincmd j<CR>')
+vim.keymap.set('n', '<leader><Left>', ':wincmd h<CR>')
+vim.keymap.set('n', '<leader><Right>', ':wincmd l<CR>')
+vim.keymap.set('n', '<leader>vs', ':vsplit<CR>')
+vim.keymap.set('n', '<leader>hs', ':split<CR>')
