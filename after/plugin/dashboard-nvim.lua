@@ -22,7 +22,7 @@ db.custom_center = {
   {
     icon = "  ",
     desc = "Find File                    ",
-    action = ":GitFiles",
+    action = require('telescope.builtin').find_files,
     shortcut = "SPC ff",
   },
   {
@@ -35,7 +35,7 @@ db.custom_center = {
     icon = "  ",
     desc = "Recent Files                 ",
     action = ":DashboardFindHistory",
-    shortcut = "SPC fh",
+    shortcut = "SPC ? ",
   },
   {
     icon = "  ",
@@ -68,4 +68,3 @@ db.custom_footer = {
   [[]],
   'https://github.com/kkalamarski/neovim-config'
 }
-

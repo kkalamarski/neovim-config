@@ -1,10 +1,4 @@
--- map the leader key
-vim.g.mapleader = ' '
+require('kkalamarski')
 
-require('settings')
-require('plugins')
-
-require('keymappings')
-require('colorscheme')
-require('lsp')
-
+-- The line beneath this is called `modeline`. See `:help modeline`
+-- vim: ts=2 sts=2 sw=2 et
