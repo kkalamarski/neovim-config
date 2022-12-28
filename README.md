@@ -9,11 +9,8 @@ For complete list inspect packer's [plugin file](https://github.com/kkalamarski/
 - [wbthomason/packer.nvim](https://github.com/nvim)
 - [kyazdani42/nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- [noib3/nvim-cokeline](https://github.com/noib3/nvim-cokeline)
 - [github/copilot.vim](https://github.com/github/copilot.vim)
 - [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [unblevable/quick-scope](https://github.com/unblevable/quick-scope)
-- [justinmk/vim-sneak](https://github.com/justinmk/vim-sneak)
 - [tpope/vim-surround](https://github.com/tpope/vim-surround)
 - [glepnir/dashboard-nvim](https://github.com/glepnir/dashboard-nvim)
 
@@ -28,7 +25,8 @@ For a complete list see [lua/keymappings.lua](https://github.com/kkalamarski/neo
 | `<leader>ff`  | Opens a floating window with fuzzy finder. Finds a file in git. |
 | `<leader>tt`  | Opens a floating window with terminal emulator.                 |
 | `<leader>gg`  | Opens a floating window with lazygit.                           |
-| `<leader>fh`  | Opens a floating window with recently opened files.             |
+| `<leader>?`   | Opens a floating window with recently opened files.             |
+| `<leader> `   | Opens a floating window with currently opened buffers.          |
 | `<C-n>`       | Toggle NvimTree                                                 |
 | `<A-(arrows)>`| Move between the panes                                          |
 
