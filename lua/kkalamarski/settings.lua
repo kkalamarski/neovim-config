@@ -42,4 +42,4 @@ vim.opt.termguicolors = true
 vim.g.nord_disable_background = true
 vim.g.nord_cursorline_transparent = true
 
-vim.cmd([[ colorscheme nord ]])
+vim.cmd.colorscheme "catppuccin-frappe"

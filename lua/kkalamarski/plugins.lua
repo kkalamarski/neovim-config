@@ -16,13 +16,15 @@ require('packer').startup(function(use)
 
   -- Navigation
   use 'kyazdani42/nvim-tree.lua'
-  use 'glepnir/dashboard-nvim'
+  use { 'nvimdev/dashboard-nvim', event = 'VimEnter' }
+  use 'ThePrimeagen/harpoon'
 
   -- AI
   use 'github/copilot.vim'
 
   -- Visuals
   use 'shaunsingh/nord.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
   use 'ryanoasis/vim-devicons'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-tree/nvim-web-devicons'
@@ -40,6 +42,7 @@ require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
   use 'lewis6991/gitsigns.nvim'
+  use 'ThePrimeagen/git-worktree.nvim'
 
   -- LSP
   use {
@@ -55,6 +58,11 @@ require('packer').startup(function(use)
       -- Additional lua configuration, makes nvim stuff amazing
       'folke/neodev.nvim',
     },
+  }
+
+  use {
+    "folke/trouble.nvim",
+    requires = "nvim-tree/nvim-web-devicons"
   }
 
   use { -- Autocompletion
