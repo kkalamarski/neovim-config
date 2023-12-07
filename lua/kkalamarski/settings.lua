@@ -32,14 +32,8 @@ vim.bo.autoindent = true
 -- Window options
 vim.wo.wrap = false
 vim.wo.number = true
-vim.wo.cursorline = true
+vim.wo.cursorline = false
 vim.wo.signcolumn = 'yes'
 vim.wo.relativenumber = true
 
 vim.opt.termguicolors = true
-
--- Colorscheme
-vim.g.nord_disable_background = true
-vim.g.nord_cursorline_transparent = true
-
-vim.cmd.colorscheme "catppuccin-frappe"

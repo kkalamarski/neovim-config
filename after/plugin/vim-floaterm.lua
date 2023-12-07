@@ -1,7 +1,7 @@
 vim.keymap.set('t', 'jj', '<C-\\><C-n>') -- exit terminal insert mode
 
-vim.keymap.set("t", "<leader>tt", '<C-\\><C-n> :FloatermToggle <CR>') -- toggle terminal
-vim.keymap.set("n", "<Leader>tt", ":FloatermToggle <CR>")
+vim.keymap.set("t", "<leader>te", '<C-\\><C-n> :FloatermToggle <CR>') -- toggle terminal
+vim.keymap.set("n", "<Leader>te", ":FloatermToggle <CR>")
 
 vim.keymap.set("t", "<leader>t[", '<C-\\><C-n> :FloatermPrev <CR>') -- switch terminals
 vim.keymap.set("t", "<leader>t]", '<C-\\><C-n> :FloatermNext <CR>')
