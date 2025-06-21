@@ -13,6 +13,12 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
+require("lazy").setup("plugins")
+
 require('kkalamarski')
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

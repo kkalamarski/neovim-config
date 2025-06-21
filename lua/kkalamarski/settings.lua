@@ -1,6 +1,3 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
-
 -- Global options
 vim.o.mouse = 'a'
 vim.o.tabstop = 2
