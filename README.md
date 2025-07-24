@@ -1,39 +1,90 @@
 # kkalamarski's neovim config
 
-An opinionated nvim configuration that I use in my everyday work. Best suited for web development.
+An opinionated nvim configuration built on LazyVim framework that I use in my everyday work. Best suited for web development with AI assistance.
 
-## Plugins
+## Architecture
 
-For complete list inspect packer's [plugin file](https://github.com/kkalamarski/neovim-config/blob/main/lua/plugins.lua).
+This configuration uses:
+- **LazyVim** as the base framework
+- **Lazy.nvim** as the plugin manager
+- **Nordfox** colorscheme
+- Modular structure for easy maintenance
 
-- [wbthomason/packer.nvim](https://github.com/nvim)
-- [kyazdani42/nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
-- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- [github/copilot.vim](https://github.com/github/copilot.vim)
-- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [tpope/vim-surround](https://github.com/tpope/vim-surround)
-- [glepnir/dashboard-nvim](https://github.com/glepnir/dashboard-nvim)
+## Key Plugins
 
-## Key bindings
+For complete list see the `lua/plugins/` directory.
+
+### Core
+- [LazyVim/LazyVim](https://github.com/LazyVim/LazyVim) - Base configuration framework
+- [folke/lazy.nvim](https://github.com/folke/lazy.nvim) - Plugin manager
+
+### LSP & Development
+- [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim) - LSP server manager
+- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - LSP configuration
+- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Syntax highlighting
+- [folke/trouble.nvim](https://github.com/folke/trouble.nvim) - Diagnostics
+
+### Navigation
+- [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - File explorer
+- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder
+- [ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon) - Quick file switching
+- [nvimdev/dashboard-nvim](https://github.com/nvimdev/dashboard-nvim) - Start screen
+
+### AI & Productivity
+- [github/copilot.vim](https://github.com/github/copilot.vim) - AI code completion
+- [voldikss/vim-floaterm](https://github.com/voldikss/vim-floaterm) - Terminal integration
+
+## Key Bindings
 
 By default `<leader>` is mapped to ` ` (space).
 
-For a complete list see [lua/keymappings.lua](https://github.com/kkalamarski/neovim-config/blob/main/lua/keymappings.lua) file.
+| Key Mapping | Description |
+|-------------|-------------|
+| `<leader>ff` | Find files |
+| `<leader>fw` | Live grep (search in files) |
+| `<leader>?` | Recently opened files |
+| `<leader>b` | Open buffers |
+| `<leader>/` | Search in current buffer |
+| `<leader>e` | Open diagnostic float |
+| `<leader>s` | Search/replace word under cursor |
+| `<S-Up>/<S-Down>` | Move lines up/down |
+| `<leader><arrows>` | Navigate between panes |
+| `<leader>vv` | Vertical split |
+| `<leader>hh` | Horizontal split |
+| `[d]/]d` | Navigate diagnostics |
 
-| key mapping   | description                                                     |
-|---------------|-----------------------------------------------------------------|
-| `<leader>ff`  | Opens a floating window with fuzzy finder. Finds a file in git. |
-| `<leader>tt`  | Opens a floating window with terminal emulator.                 |
-| `<leader>gg`  | Opens a floating window with lazygit.                           |
-| `<leader>?`   | Opens a floating window with recently opened files.             |
-| `<leader> `   | Opens a floating window with currently opened buffers.          |
-| `<C-n>`       | Toggle NvimTree                                                 |
-| `<A-(arrows)>`| Move between the panes                                          |
+## Installation
 
+1. Backup your existing config:
+   ```bash
+   mv ~/.config/nvim ~/.config/nvim.backup
+   ```
 
-## Screenshots
-![Zrzut ekranu 2022-03-22 o 21 56 55](https://user-images.githubusercontent.com/5514826/159574505-88888196-e077-4984-927b-ae904c6e6d7b.png)
-![Zrzut ekranu 2022-03-22 o 21 57 25](https://user-images.githubusercontent.com/5514826/159574589-1e72a3f3-529e-4a5d-b797-0aef09d5d795.png)
-![Zrzut ekranu 2022-03-22 o 21 59 15](https://user-images.githubusercontent.com/5514826/159574915-fa9665f6-ed99-43f2-8032-1e18f301aa3f.png)
-![Zrzut ekranu 2022-03-22 o 21 59 56](https://user-images.githubusercontent.com/5514826/159575010-a1942773-6d3e-4593-a605-9738f260ea2e.png)
-![Zrzut ekranu 2022-03-22 o 22 01 22](https://user-images.githubusercontent.com/5514826/159575260-7c6c4c77-5787-4a10-8b51-dd8a60cee6ee.png)
+2. Clone this config:
+   ```bash
+   git clone https://github.com/kkalamarski/neovim-config ~/.config/nvim
+   ```
+
+3. Start Neovim - plugins will install automatically:
+   ```bash
+   nvim
+   ```
+
+## Structure
+
+```
+├── init.lua                 # Entry point
+├── lua/
+│   ├── kkalamarski/        # Personal configuration
+│   │   ├── init.lua        # Loads settings, LSP, remaps
+│   │   ├── settings.lua    # Vim options
+│   │   ├── lsp.lua         # LSP configuration
+│   │   └── remaps.lua      # Custom keymaps
+│   └── plugins/            # Plugin specifications
+│       ├── lazy.lua        # LazyVim base config
+│       ├── lsp.lua         # LSP plugins
+│       ├── navigation.lua  # Navigation plugins
+│       ├── ai.lua          # AI plugins
+│       └── ...
+└── after/plugin/           # Plugin-specific configs
+```
